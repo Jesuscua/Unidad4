@@ -43,3 +43,26 @@ Real-time analysis: A large number of use cases require real-time analysis. From
 the concepts of science and data engineering are wrongly considered synonymous. The truth is that the first one acts at the tip, near the end user; while the latter operates closer to the base of the infrastructure and is therefore sometimes considered less glamorous and often ends up being neglected.
 
 However, when it comes to data science, it requires intelligence and the ability to carry out consolidated analyzes, providing forecasts for business development. Data engineering is a fundamental part of the process of extracting value from databases, most of the time, rustic and from various sources. In a practical way, if there is no good process in the area, data science fails to exercise its role.
+
+### Define the concepts of data acquisition, management, process and administration.
+
+Data acquisition systems, as the name implies, are products or processes that are used to collect information to document or analyze a phenomenon. In its simplest form, a technician who records the temperature of an oven on paper is executing data acquisition.
+
+Data management is the practice of organizing and maintaining data processes to meet the needs of the continuous life cycle of information. The emphasis on data management began with the electronic age of data processing, but data management methods have roots in accounting, statistics, logistics planning, and other disciplines that predated the rise of corporate computing.
+Data processing occurs when data is collected and translated into usable information. Data scientists are often involved, alone or in teams, and it is important that the processing is done correctly so as not to adversely affect the final product or the results obtained from the data.
+
+Data administration or data resource management is an organizational function that works in the areas of information systems and computer science that plans, organizes, describes and controls data resources.
+
+
+Arquitechture Lambda & Kappa: The main difference is the flow of data processing involved. Lambda has an architecture consisting of the batch layer, the speed layer, the serving layer, unlike kappa is composed of the speed layer and the serving layer.
+#### Lambda
+Their goal was to have a robust fault-tolerant system, both human and hardware, that was linearly scalable and that allowed low-latency writes and reads.
+
+lambda architecture image: https://new.paradigmadigital.com/wp-content/uploads/2018/04/arquitecturas-big-data4.png
+
+#### Kappa
+In it he points out the possible “weak” points of Lambda Architecture and how to solve them through evolution. His proposal is to remove the batch layer leaving only the streaming layer.
+This layer, unlike the batch type, has neither a beginning nor an end from a temporal point of view and is continually processing new data as they arrive.
+As a batch process can be understood as a bounded stream, we could say that batch processing is a subset of streaming processing.
+
+Kappa architecture image: https://new.paradigmadigital.com/wp-content/uploads/2018/04/arquitecturas-big-data5.png
